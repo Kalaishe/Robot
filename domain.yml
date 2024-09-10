@@ -1,0 +1,48 @@
+version: "3.1"
+
+intents:
+  - end_Shop
+  - order_ingredient
+  - order_body_lotion
+  - order_stain_remover
+  - nlu_fallback
+  - affirm
+  - goodbye
+  - greet
+
+responses:
+  utter_generic_confirmation:
+    - text: "Your request has been received and the item is being prepared for collection."
+
+  utter_order_stain:
+    - text: "Your request has been received and the item is being prepared for collection."
+
+  utter_thank_you:
+    - text: "Thank you for participating in the experiment."
+
+  utter_ask_finish_order:
+    - text: "Would you like to finish and submit your order? If you need to add more items, please let me know. If you're ready to complete your order, just write 'end order'."
+
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+      image: "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGNueHBybHFwMWhkaDBuaHMxZGdxZmxncjNyZTMzN2cyMzUxMmtpaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UuD38pcfABh2Caibhx/giphy.gif"
+
+
+  utter_fallback:
+    - text: "Sorry, I didn't understand that. Could you please ask about the available products or place an order?"
+    
+  utter_goodbye:
+    - text: "Goodbye! Your order will be ready for pickup."
+
+actions:
+  - utter_thank_you
+  - utter_generic_confirmation
+  - utter_ask_finish_order
+  - utter_greet
+  - utter_fallback
+  - utter_goodbye
+  - utter_order_stain
+
+session_config:
+  session_expiration_time: 5
+  carry_over_slots_to_new_session: true

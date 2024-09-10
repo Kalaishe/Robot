@@ -1,0 +1,285 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey there
+    - Good morning
+    - Howdy
+    - Hallo
+    - Moin
+    - Gruß
+    - greet
+    - Grüß Gott
+    - servus
+    - Guten Tag
+
+- intent: affirm   
+  examples: |
+    - ja
+    - yes
+    - si
+
+- intent: end_Shop
+  examples: |
+    - end Shop
+    - End shop
+
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - See you later
+    - Bye
+    - Have a nice day
+    - Farewell
+    - by
+    - ciao
+  
+
+- intent: order_ingredient
+  examples: |
+    - can i have milk
+    - add me Milk.
+    - Order one Bottle Milk.
+    - I want to order 400 g of flour.
+    - Can you add 100 g of sugar to my order?
+    - Please order 6 eggs.
+    - Add 200 g of butter to my cart.
+    - I need flour for baking.
+    - Order some sugar and eggs.
+    - I would like to buy 200 g of butter.
+    - Can you get me 500 grams of flour?
+    - Please add 250 g of sugar to my order.
+    - I need 12 eggs for a recipe.
+    - Order a pound of butter for me.
+    - Get me 300 g of flour.
+    - I’d like to purchase 150 g of sugar.
+    - Can you add 8 eggs to my cart?
+    - I need 100 g of butter.
+    - Please add 1 kg of flour.
+    - I want 200 grams of sugar.
+    - Can you get me 6 large eggs?
+    - I need 250 g of butter for baking.
+    - Order 300 g of flour and 100 g of sugar.
+    - Can I have 500 grams of flour, please?
+    - I need 4 eggs for my recipe.
+    - Add 300 g of sugar to my cart.
+    - I would like to order 150 g of butter.
+    - Please add 1 dozen eggs.
+    - I need 200 g of flour for my cookies.
+    - Can you get me 1 kg of sugar?
+    - Order 8 eggs and 200 g of flour.
+    - I need 100 g of sugar and 6 eggs.
+    - Can you add 500 g of butter to my cart?
+    - I want to order 200 g of flour and 4 eggs.
+    - Add 150 g of sugar and 6 eggs to my order.
+    - Add sugar to my cart.
+    - Can you add flour to my cart?
+    - Put eggs in my order.
+    - Have you any bio flour?
+    - Add bio eggs to my cart.
+    - I want to order organic eggs.
+    - I want to buy sugar.
+    - I want to buy butter.
+    - Can you please order eggs?
+    - I need some flour for baking.
+    - Add some sugar and eggs to my cart.
+    - I want 500 grams of butter, please.
+    - Order me one Pack of Milk.
+    - can you put Milk in my cart?
+    - I need 150ml Milk.
+    - order me organic Milk.
+    - I need fresh Milk.
+    - Order me 100ml Milk and 100g Sugar.
+    - I want to buy 200 g Butter.
+    - Can you bring me 500 Gramm Flour?
+    - Please add milk,sugar,flour,butter,eggs to my cart.
+    - I need 12 eggs for my recipe.
+    - Order me one pound butter.
+    - Give me 300g flour.
+
+
+
+
+- intent: order_body_lotion
+  examples: |
+    - I want to order a body lotion.
+    - Can you help me find a good body lotion?
+    - I need a moisturizing body lotion.
+    - Add a body lotion to my cart.
+    - I’d like to buy a scented body lotion.
+    - Can you recommend a body lotion for dry skin?
+    - I need a gift-quality body lotion.
+    - Order a body lotion for me, please.
+    - I’m looking for a luxurious body lotion.
+    - Please add a body lotion to my order.
+    - Can you get me a hydrating body lotion?
+    - I want to purchase a body lotion for a friend.
+    - Please find a body lotion with a floral scent.
+    - I need a body lotion with vitamins.
+    - Can you add a soothing body lotion to my cart?
+    - I’d like a body lotion with shea butter.
+    - Order a body lotion for sensitive skin.
+    - I need a body lotion with a pleasant fragrance.
+    - Can you get me a body lotion that’s good for winter?
+    - I want a nourishing body lotion.
+    - Please find a body lotion that is non-greasy.
+    - I need a body lotion with natural ingredients.
+    - Add a body lotion with SPF to my order.
+    - I want a body lotion with a light scent.
+    - Can you recommend a body lotion for all skin types?
+    - I’d like to buy a body lotion with aloe vera.
+    - Order a rich body lotion for dry skin.
+    - Please add a relaxing body lotion to my cart.
+    - I need a body lotion with anti-aging properties.
+    - Can you find a hypoallergenic body lotion for me?
+    - I want a body lotion that absorbs quickly.
+    - Add Dove body lotion to my order.
+    - Order Nivea body lotion for my cart.
+    - Please add Balea body lotion to my cart.
+    - I want to order Eucerin body lotion.
+    - Get me Weleda body lotion, please.
+    - Add Neutrogena body lotion to my order.
+    - I’d like to buy La Roche-Posay body lotion.
+    - Order Sebamed body lotion for sensitive skin.
+    - Please add CeraVe body lotion to my cart.
+    - I want a bottle of Aveeno body lotion.
+
+  
+
+- intent: order_stain_remover
+  examples: |
+    - I need a good stain remover.
+    - Can you add a stain remover to my cart?
+    - Order a powerful stain remover for me.
+    - I want to buy a stain remover for laundry.
+    - Please find a stain remover that works on grease.
+    - Get me a stain remover for red wine stains.
+    - I need a reliable stain remover for clothes.
+    - Add a stain remover to my order, please.
+    - I want a stain remover for coffee stains.
+    - Can you find a stain remover for carpet?
+    - I need a stain remover for ink stains.
+    - Please get a stain remover that’s effective on old stains.
+    - Order a stain remover for heavy-duty cleaning.
+    - I need a stain remover that is safe for colors.
+    - Can you add a stain remover that is eco-friendly?
+    - I’d like to buy a stain remover for pet stains.
+    - Find a stain remover that works on blood stains.
+    - Please get a stain remover for white fabrics.
+    - I need a stain remover for wine and juice stains.
+    - Add a high-performance stain remover to my cart.
+    - I want a stain remover for all kinds of stains.
+    - Can you find a stain remover for grease and oil?
+    - I need a stain remover that doesn’t harm fabric.
+    - Please get persil for me that is quick and effective.
+    - I want to order a stain remover for general use.
+    - Can you add a powerful stain remover to my cart?
+    - I need a stain remover for household stains.
+    - Find a stain remover that’s easy to use.
+    - Please get a stain remover with a strong formula.
+    - I want a stain remover that works on various surfaces.
+    - Order a stain remover that is safe for children’s clothes.
+    - Order Vanish stain remover.
+    - Add Dr. Beckmann stain remover to my cart.
+    - Put one Sodasan stain remover in my order.
+    - I need Ariel stain remover.
+    - Have you got Sil stain remover?
+    - Order Oxi Action stain remover.
+    - Put Perwoll stain remover in my cart.
+
+
+
+
+
+- intent: nlu_fallback
+  examples: |
+    - order a set of cooking utensils
+    - I want to buy a new bicycle
+    - add some cleaning supplies to my cart
+    - find a good coffee shop
+    - I want a new gaming console
+    - order a new blender
+    - buy a new wallet
+    - find a recipe for chocolate cake
+    - add some snacks to my cart
+    - I need a gift for a child
+    - find a nearby park
+    - can you get me a new backpack?
+    - I need a book on gardening
+    - order a new set of golf clubs
+    - find a nearby dentist
+    - order some vitamins
+    - I want a new set of cookware
+    - get me a new set of towels
+    - find a good place to eat
+    - I need a new umbrella
+    - order some stationery
+    - add a new lamp to my cart
+    - find a yoga class nearby
+    - I want to buy a new rug
+    - get me a new camera
+    - I want a pizza.
+    - Can you tell me a joke?
+    - What is the weather like today?
+    - I need a new phone
+    - I am looking for a TV
+    - I want 
+    - I 
+    - Can 
+    - You
+    - Ah
+    - Ejj
+    - Who are
+    - U
+    - What can u
+    - What is the time
+    - Dbdsa
+    - Aspa
+    - Noooooooo
+    - Naaaaaa
+    - Yeeeeeee
+    - Akdspa
+    - Order TV
+    - Put chocolate
+    - Order cheese
+    - Tell more
+    - What
+    - If
+    - Me
+    - Order pizza
+    - Order chocolate
+    - Wie ist das Wetter heute?
+    - Ich brauche eine neue Uhr
+    - i want to buy
+    - I want
+    - can you do more
+    - can you help me
+    - Ich 
+    - Kann 
+    - Du
+    - Ah
+    - Eh
+    - Wer bist du
+    - Du
+    - Was kannst du
+    - Wie spät ist es?
+    - Qwertz
+    - Asdf
+    - Nein
+    - Naja
+    - Ja
+    - Xyza
+    - Bestell TV
+    - Füge Schokolade hinzu
+    - Bestell Käse
+    - Erzähl mehr
+    - Was
+    - Wenn
+    - Mir
+    - can you
+    - fhdfsisfdi
+    - abc

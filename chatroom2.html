@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Assistant</title>
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .introduction {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .introduction h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .introduction p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+            max-width: 1300px;
+            margin-bottom: 20px;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border-radius: 12px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .video-placeholder iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .task-container {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .task-container h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .task-container p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .task-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .task-container li {
+            background-color: #e8f4f8;
+            border: 1px solid #d1e0e5;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 1.1em;
+        }
+
+        .large-image-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .large-image {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .large-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            height: 600px;
+            align-items: stretch;
+        }
+
+        .profile-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fafafa;
+            border-right: 2px solid #ddd;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .profile-image {
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .chat-container {
+            flex: 2;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fafafa;
+            overflow-y: auto;
+            border-radius: 12px;
+        }
+
+        .tasks-container {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fafafa;
+            border-left: 2px solid #ddd;
+            border-radius: 12px;
+            overflow-y: auto;
+        }
+
+        .tasks h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .task {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .video-container {
+                flex-direction: column;
+            }
+
+            .large-image-container {
+                flex-direction: column;
+            }
+
+            .large-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .chat-container {
+                width: 100%;
+                height: 400px;
+            }
+
+            .profile-container {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+            }
+
+            .profile-image {
+                max-width: 100%;
+                max-height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Shopping Assistant</h1>
+    </div>
+    <div class="introduction">
+        <h2>Welcome to Our Experiment!</h2>
+        <p>Thank you for participating in this study! Your task is to use our online click-and-collect system to order the following items. Please start by watching the introductory video below:</p>
+    </div>
+    <div class="video-container">
+        <div class="video-placeholder">
+            <iframe src="https://www.youtube.com/embed/0urMKwoencA?autoplay=1&mute=1&loop=1&playlist=0urMKwoencA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="task-container">
+        <h4>Tasks</h4>
+        <p><strong>Task 1:</strong> Imagine you want to bake cookies. Please order the following ingredients through the chat window:</p>
+        <ul>
+            <li>400g Flour</li>
+            <li>100g Sugar</li>
+            <li>6 Eggs</li>
+            <li>200g Butter</li>
+            <li>150ml Milk</li>
+        </ul>
+        <p><strong>Task 2:</strong> You want to buy a body lotion as a gift for a relative. Order a suitable body lotion through the chat window.</p>
+        <p><strong>Task 3:</strong> You need a good Stain Remover that effectively works against stains. Order the Stain Remover through the chat window.</p>
+        <p>Please use the chat window to place your orders. The orders will be prepared for pickup.</p>
+    </div>
+    <div class="large-image-container">
+        <div class="large-image">
+            <img src="https://i.imgur.com/2vQXVOo.png" alt="Large Image">
+        </div>
+    </div>
+    <div class="container">
+        <div class="profile-container">
+            <img src="https://i.imgur.com/kRuAh9y.jpeg" alt="Profile Image" class="profile-image">
+        </div>
+        <div class="chat-container"></div>
+        <div class="tasks-container">
+            <div class="tasks">
+                <h3>Shopping List</h3>
+                <div class="task" id="task1">400 g Flour</div>
+                <div class="task" id="task2">100 g Sugar</div>
+                <div class="task" id="task3">200 g Butter</div>
+                <div class="task" id="task4">6 Eggs</div>
+                <div class="task" id="task5">150ml Milk</div>
+                <div class="task" id="task6">Body Lotion</div>
+                <div class="task" id="task7">Stain Remover</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.js"></script>
+    <script type="text/javascript">
+        var chatroom = new window.Chatroom({
+            host: "http://localhost:5005",
+            title: "Shopping Bot",
+            container: document.querySelector(".chat-container"),
+            welcomeMessage: "Welcome! I am your shopping assistant and will help you find exactly what you need.",
+            speechRecognition: "en-US",
+            voiceLang: "en-US",
+        });
+
+        chatroom.openChat();
+    </script>
+</body>
+
+</html>

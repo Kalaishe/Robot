@@ -1,0 +1,19 @@
+version: "3.1"
+
+rules:
+
+- rule: finish shop
+  steps:
+  - intent: end_Shop
+  - action: utter_thank_you
+
+
+- rule: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback

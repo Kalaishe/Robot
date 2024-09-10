@@ -1,0 +1,58 @@
+
+
+version: "3.1"
+
+stories:
+
+
+- story: Finish Order
+  steps:
+  - intent: end_Shop
+  - action: utter_thank_you
+          
+
+
+- story: greet and order ingredients
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_ingredient
+  - action: utter_generic_confirmation
+
+
+- story: greet and order body lotion
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_body_lotion
+  - action: utter_generic_confirmation
+
+
+- story: greet and order stain remover
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_stain_remover
+  - action: utter_generic_confirmation
+
+
+
+- story: handle additional orders
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_ingredient
+  - action: utter_generic_confirmation
+  - intent: order_body_lotion
+  - action: utter_generic_confirmation
+
+- story: handle stain and finish
+  steps:
+  - intent: order_stain_remover
+  - action: utter_order_stain
+  - action: utter_ask_finish_order
+
+- story: handle fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
