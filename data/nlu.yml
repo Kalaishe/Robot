@@ -26,6 +26,8 @@ nlu:
   examples: |
     - end Shop
     - End shop
+    - shop end
+    - Shop End
 
 
 - intent: goodbye

@@ -18,10 +18,10 @@ responses:
     - text: "Your request has been received and the item is being prepared for collection."
 
   utter_thank_you:
-    - text: "Thank you for participating in the experiment."
+    - text: "Thank you for participating in the experiment. Please fill out the following survey: https://forms.gle/kcCN8Fy6276uWXqF8"
 
   utter_ask_finish_order:
-    - text: "Would you like to finish and submit your order? If you need to add more items, please let me know. If you're ready to complete your order, just write 'end order'."
+    - text: "Would you like to finish and submit your order? If you need to add more items, please let me know. If you're ready to complete your order, just write 'end shop'."
 
   utter_greet:
     - text: "Hello! How can I assist you today?"
