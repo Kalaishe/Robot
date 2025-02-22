@@ -71,7 +71,7 @@ Der Rasa-Server kann mit folgendem Befehl gestartet werden:
 Dadurch wird der Chatbot unter `http://localhost:5005` erreichbar sein.
 
 ### 3. HTML-Chatroom öffnen
-Der Chatbot kann über eine HTML-Seite verwendet werden. Einfach die entsprechende Datei im Browser öffnen.
+Der Chatbot kann über eine HTML-Seite verwendet werden. Einfach die entsprechende Datei im Browser öffnen. Beispiel Chatroom7.html
 
 ## 📝 Datenanalyse
 Die Chat-Daten werden lokal in einer SQLite-Datenbank gespeichert.
