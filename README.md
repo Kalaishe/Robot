@@ -84,7 +84,7 @@ tracker_store:
 ```
 
 ### 1. Daten auswerten
-Ein Python-Skript analysiert die gespeicherten Daten und erstellt Chatprotokolle:
+Python-Skript analysiert die gespeicherten Daten und erstellt Chatprotokolle:
 ```sh
  python analyze_data.py
 ```
