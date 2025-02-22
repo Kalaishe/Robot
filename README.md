@@ -37,17 +37,17 @@ Klonen Sie das Repository auf Ihren lokalen Rechner:
 ### 2. Virtuelle Umgebung erstellen und aktivieren
 Erstellen und aktivieren Sie eine virtuelle Umgebung, um Abhängigkeiten isoliert zu verwalten:
 ```sh
- python -m venv Hbot_env  # Erstellen der virtuellen Umgebung
+ python -m venv Robot_env  # Erstellen der virtuellen Umgebung
 ```
 
 **Windows:**
 ```sh
- Hbot_env\Scripts\activate
+ Robot_env\Scripts\activate
 ```
 
 **Linux/macOS:**
 ```sh
- source Hbot_env/bin/activate
+ source Robot_env/bin/activate
 ```
 
 ### 3. Abhängigkeiten installieren
