@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Assistant</title>
+    <!-- Einbindung des CSS-Stylesheets für das Chat-Interface -->
     <link rel="stylesheet" href="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.css" />
     <style>
+        /* Grundlegende Stile für das Layout und Design der Seite */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f2f5;
@@ -17,7 +19,7 @@
             align-items: center;
             color: #333;
         }
-
+/* Header-Bereich der Seite */
         .header {
             width: 100%;
             background-color: #4CAF50;
@@ -28,7 +30,7 @@
             margin-bottom: 20px;
             font-size: 1.5em;
         }
-
+ /* Einführungstext zur Studie */
         .introduction {
             text-align: center;
             padding: 20px;
@@ -48,7 +50,7 @@
             font-size: 1.2em;
             margin: 10px 0;
         }
-
+/* Video-Bereich für die Einführung */
         .video-container {
             display: flex;
             justify-content: center;
@@ -58,7 +60,7 @@
             max-width: 1300px;
             margin-bottom: 20px;
         }
-
+/* Platzhalter für ein Video */
         .video-placeholder {
             width: 100%;
             max-width: 700px;
@@ -77,7 +79,7 @@
             height: 100%;
             border: none;
         }
-
+/* Container für die Aufgabenliste */
         .task-container {
             padding: 20px;
             background-color: #fff;
@@ -137,7 +139,7 @@
             object-fit: cover;
             border-radius: 12px;
         }
-
+ /* Layout für das gesamte Interface */
         .container {
             display: flex;
             width: 90%;
@@ -170,7 +172,7 @@
             border-radius: 12px;
             object-fit: cover;
         }
-
+/* Chat-Fenster für die Kommunikation mit dem Bot */
         .chat-container {
             flex: 2;
             padding: 20px;
@@ -204,7 +206,7 @@
             text-align: center;
             transition: background-color 0.3s ease;
         }
-
+  /* Responsive Anpassungen für kleinere Bildschirme */
         @media (max-width: 768px) {
             .video-container {
                 flex-direction: column;
@@ -275,7 +277,7 @@
         <div class="large-image">
             <img src="https://i.imgur.com/2vQXVOo.png" alt="Large Image">
         </div>
-    </div>
+    </div> <!-- Bereich für das Chat-Interface und Profilanzeige -->
     <div class="container">
         <div class="profile-container">
             <img src="https://i.imgur.com/kRuAh9y.jpeg" alt="Profile Image" class="profile-image">
@@ -293,7 +295,7 @@
                 <div class="task" id="task7">Stain Remover</div>
             </div>
         </div>
-    </div>
+    </div> <!-- Einbindung des Chat-Systems -->
     <script src="https://cdn.statically.io/gh/weberi/chatroom/master/dist/Chatroom.js"></script>
     <script type="text/javascript">
         var chatroom = new window.Chatroom({
@@ -305,7 +307,7 @@
 
         chatroom.openChat();
 
-        // Scroll to the top of the page when the document is ready
+       
         window.addEventListener('load', function() {
             window.scrollTo(0, 0);
         });
