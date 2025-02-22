@@ -11,7 +11,7 @@ https://github.com/weberi/aicampus-chatbot-course
 
 Die Bilder und Videos wurden mit Kling AI https://klingai.com/ generiert und anschließend auf YouTube hochgeladen (https://www.youtube.com/) sowie auf Imgur geteilt (https://imgur.com/). Der gesamte Prozess wurde in einem HTML-basierten Chatroom gespeichert.
 
-# Rasa Chatbot mit Datenanalyse
+# Rasa Chatbot lokal mit Datenanalyse
 
 ## 🤖 Projektübersicht
 Dieses Projekt beinhaltet einen Chatbot, der mit [Rasa](https://rasa.com/) entwickelt wurde, sowie ein Python-Skript zur Analyse der Chat-Daten. Ziel der Analyse ist es, zu untersuchen, wie verschiedene Chatbot-Designs die Interaktion der Nutzer beeinflussen.
