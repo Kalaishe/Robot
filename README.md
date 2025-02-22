@@ -93,8 +93,7 @@ Ein Python-Skript analysiert die gespeicherten Daten und erstellt Chatprotokolle
 - Rasa-Dokumentation: [Installation & Setup](https://rasa.com/docs/rasa/installation/environment-set-up)
 - SQLite-Datenbank: [SQLite Docs](https://www.sqlite.org/docs.html)
 
-## 🌟 Lizenz & Autoren
-Dieses Projekt wird von [Kalaishe](https://github.com/Kalaishe) betreut und entwickelt.
+
 
 ---
 Falls Fragen oder Probleme auftreten, bitte ein Issue im Repository erstellen.
