@@ -6,7 +6,7 @@ https://lms.futureskills-sh.de/blocks/ildmetaselect/detailpage.php?id=135
 Die offizielle Dokumentation von Rasa Open Source ist hier einsehbar:
 https://rasa.com/docs/rasa/
 
-Der ursprünglich im Kurs verwendete Chatroom-Container wurde ebenfalls von Irene Weber bereitgestellt, allerdings später geändert. Der Originalcode ist auf GitHub abrufbar:
+Der in dieser Arbeit verwendete Chatroom-Container wurde ebenfalls von Irene Weber bereitgestellt, allerdings verändert. Der Originalcode ist auf GitHub abrufbar:
 https://github.com/weberi/aicampus-chatbot-course
 
 Die Bilder und Videos wurden mit Kling AI https://klingai.com/ generiert und anschließend auf YouTube hochgeladen (https://www.youtube.com/) sowie auf Imgur geteilt (https://imgur.com/). Der gesamte Prozess wurde in einem HTML-basierten Chatroom gespeichert.
